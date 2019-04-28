@@ -8,11 +8,39 @@ def create_df():
     df = pd.DataFrame()
     return df
 
+# add player names with zeros for each stat
 def add_names(df):
+    zeros = [0]*len(names)
+    new_data =  pd.DataFrame({"name":names, 'SLG':zeros, 'LGS':zeros, 'EGS':zeros, 'SLG_Gain':zeros})
+    df = df.append(new_data)
+    return df
 
+def get_mlbam(df):
+
+    #from pybaseball import playerid_lookup
+    name = "A.J. Winter Jr."
+    LastName = (name.split()[1:]).lower()
+    FirstName = (name.split()[0]).lower()
+    print(LastName)
+    print(FirstName)
+
+
+
+
+def calc_slg_stats(df):
+    for name in names:
+        for index, row in df.iterrows():
+            if(row['name']==name):
+                print("hello")
 
 
 
 def main():
 
     data = create_df()
+    get_mlbam(data)
+    #data = add_names(data)
+    #calc_slg_stats(data)
+    #print(data)
+
+main()

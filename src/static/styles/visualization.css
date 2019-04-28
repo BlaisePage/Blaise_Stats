@@ -14,8 +14,8 @@ body#visualizationPage {
   left: 0;
   right: 0;
   top: 0;
-  margin-bottom: 300px;
   position: fixed;
+  z-index: 100000 !important;
 }
 .header img {
   float:right;
@@ -40,7 +40,7 @@ body#visualizationPage {
 }
 
 .viz_container h1 {
-  color: #ffffff;
+  color: #265489;
 }
 
 .viz_graph {
@@ -52,6 +52,10 @@ body#visualizationPage {
   text-align: center;
 }
 
+.form-group {
+  margin: 75px;
+  z-index: -1;
+}
 
 /* demo/demo.css */
 body{
@@ -81,7 +85,7 @@ input[type=text].form-control{
 }
 
 
-/* demo/prettify.css */
+/* js/prettify.css */
 .com { color: #93a1a1; }
 .lit { color: #195f91; }
 .pun, .opn, .clo { color: #93a1a1; }

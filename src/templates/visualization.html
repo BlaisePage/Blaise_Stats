@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/calculate.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/visualization.css') }}">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -48,30 +48,26 @@
     </nav>
   </div>
 
-  <body id=calculationPage>
+  <body id=visualizationPage>
 
 
     <div class="viz_container">
 
-    <!-- autocomplete Button -->
-    <form action="" method="post">
-      <div class="form-group" style="margin:200px;">
-        <input type="text" class="form-control" id="auto1" placeholder="Enter Player Name", name="player_name", value="{{ request.form.player_name }}">
-      </div>
-      <button type="submit" class="btn btn-primary">Search</button>
-    </form>
+      <!-- autocomplete Button -->
+      <form action="" method="post">
+        <div class="form-group"> <!-- style="margin:200px;"> -->
+          <input type="text" class="form-control" id="auto1" placeholder="Enter Player Name", name="player_name", value="{{ request.form.player_name }}">
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
 
-
-      <H1>Late Game Slugging</H1>
 
       <!-- Display Graph -->
-      <!--
       <div class="viz_graph">
 
         {{ script|safe }}
         {{ div|safe }}
       </div>
-    -->
     </div>
 
   </body>
