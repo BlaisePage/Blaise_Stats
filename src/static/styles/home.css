@@ -33,18 +33,22 @@ body#HomePage {
   font-size: 1.4em !important;
 }
 
+.message_box {
+  text-align: center;
+}
 .message {
   display: inline-block;
   text-align: center;
   width: 40%;
-  height: 20%;
+  height: 30%;
   background-color: #ffffff;
-  /*font-size: 2.2em;*/
-  /*font-size: calc(3vw + 1vh);*/
-  /*font-size: 70%*/
-  font-size: 40%;
+  /*font-size: 80%;*/
   margin-top: 15%;
   margin-bottom: 15%;
   opacity: 0.8;
   font-style: italic;
+}
+
+.message h1 {
+  padding: 50px;
 }

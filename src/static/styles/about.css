@@ -38,11 +38,15 @@ body#aboutPage{
   display: inline-block;
   text-align: center;
   width: 80%;
-  height: 60%;
+  height: 70%;
   background-color: #ffffff;
   /*font-size: 80%;*/
   margin-top: 15%;
   margin-bottom: 15%;
   opacity: 0.8;
   font-style: italic;
+}
+
+.message h2 {
+  padding: 50px;
 }
