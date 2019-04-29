@@ -1,7 +1,7 @@
 # Blaise_Stats
 My own sabermetrics website
 
-To view my web app go [here](https://infinite-refuge-56638.herokuapp.com/)
+To view my web app go [here](http://www.blaisestats.com/)
 
 If you prefer to run this application locally run the following commands:
 
