@@ -43,6 +43,10 @@ SLG = (1B + 2B\*2 + 3B\*3 + HR\*4)/AB
 
 where 1B=singles, 2B=doubles, 3B=triples, HR=home runs, and AB=at bats
 
+Therefore:
+
+LGS = (1B<sub>late game</sub> + 2B<sub>late game</sub>\*2 + 3B<sub>late game</sub>\*3 + HR<sub>late game</sub>\*4)/AB<sub>late game</sub>
+
 Moreover, once I calculated a players EGS and LGS using the SLG equation above, I took the difference of the two metrics (LGS - EGS) to get a stat that I call SLG_GAIN. SLG_GAIN can be thought of as how much a given player's slugging percentage increases in late game scenarios compared to the previous innings. By fault, a positive SLG_GAIN means that a player is more productive at bat late in the game, while a negative SLG_GAIN means that the player's batting productivity declined in the later innings.
 
 EGS, LGS, and SLG_GAIN are obviously closely related to the SLG metric; however, they also incorporate a time factor that is similar to correlating SLG to inning number. Moreover, EGS and LGS may be more insightful than a simple correlation between inning number and SLG because it also depicts a player's previous SLG during a given set of innings (correlations alone can not accomplish this). Another stat that can be related to EGS, LGS, and SLG_GAIN is clutch hitting. Although clutch hitting focuses more on the state of a given game compared to EGS, LGS, and SLG_GAIN, these metrics can still be used to evaluate whether or not a batter will be productive in late game scenarios.
