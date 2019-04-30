@@ -1,7 +1,7 @@
 # Blaise_Stats #
-My own sabermetrics website
+## My own sabermetrics website ##
 
-To view my web app go [here](http://www.blaisestats.com/)
+### To view my web app go [here](http://www.blaisestats.com/) ###
 
 If you prefer to run this application locally run the following commands:
 
